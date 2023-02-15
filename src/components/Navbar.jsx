@@ -37,7 +37,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
           <div className="hidden lg:flex items-center">
             <ul className="flex gap-10">
               {links.map(({ id, link, src, brand }) => (
-                <a key={id} href={link} target="_blank" rel="noreferrer">
+                <a key={id} href={link}>
                   <div>
                     <img src={src} alt="" className={brand} />
                   </div>
@@ -66,8 +66,6 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
               key={id}
               onClick={() => setIsMenuShown(!isMenuShown)}
               href={link}
-              target="_blank"
-              rel="noreferrer"
             >
               <img src={src} alt="" className={brand} />
             </a>
