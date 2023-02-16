@@ -8,6 +8,7 @@ import product1 from "@/assets/categorys/products2/product1.jpg";
 import product2 from "@/assets/categorys/products2/product2.jpg";
 import product3 from "@/assets/categorys/products2/product3.jpg";
 import product4 from "@/assets/categorys/products2/product4.jpg";
+import Navigate from "@/components/categorys/Navigate";
 
 import mx1 from "@/assets/categorys/mx1.mp4";
 import mx2 from "@/assets/categorys/mx2.mp4";
@@ -56,34 +57,7 @@ const Product2 = () => {
     >
       <div className="w-full bg-gradient-to-b from-gray-800 to-black text-white">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
-          <div className="flex  flex-col p-5 gap-5 items-center justify-center ">
-            <Link to="/">
-              <div className="flex flex-col w-full md:flex-row justify-center items-center md:gap-8 rounded-full shadow-lg shadow-thGreen hover:scale-105 duration-200 px-12 p-3 cursor-pointer ">
-                <div className="flex gap-4">
-                  <img
-                    src={logoMdwx}
-                    alt="contact us"
-                    className="rounded-full object-cover w-9 h-9 shadow-lg shadow-thOrange   "
-                  />
-                  <AiFillFire size={40} className="text-thGreen" />
-                </div>
-                <p>Producto 1</p>
-              </div>
-            </Link>
-            <Link to="/producto2">
-              <div className="flex flex-col w-full md:flex-row justify-center items-center md:gap-8 rounded-full shadow-lg shadow-thGreen hover:scale-105 duration-200 px-12 p-3 cursor-pointer ">
-                <div className="flex gap-4">
-                  <img
-                    src={logoMdwx}
-                    alt="contact us"
-                    className="rounded-full object-cover w-9 h-9 shadow-lg shadow-thOrange   "
-                  />
-                  <AiFillExperiment size={40} className="text-thGreen" />
-                </div>
-                <p>Producto 2</p>
-              </div>
-            </Link>
-          </div>
+          <Navigate />
           <div className="grid gap-8 md:px-12 grid-cols-1 sm:grid-cols-2  lg:grid-cols-2">
             {portfolios.map(({ id, src, code, category, brand }) => (
               <div
@@ -94,7 +68,7 @@ const Product2 = () => {
                   <div className="flex flex-col items-center justify-center">
                     <img
                       src={src}
-                      className="h-[330px] md:h-[500px]  w-full  object-cover "
+                      className="h-[330px] md:h-[500px]  w-full  object-cover rounded-t-xl "
                     />
                     <p className="m-4 capitalize text-sm md:text-lg">
                       {category}
@@ -114,7 +88,7 @@ const Product2 = () => {
                     type="video/mp4"
                     playsInline
                     muted
-                    className="h-[330px] md:h-[500px]  w-full  object-cover "
+                    className="h-[330px] md:h-[500px]  w-full  object-cover  rounded-t-xl"
                   />
                   <p className="m-4 capitalize text-sm md:text-lg">
                     @madwaxx_co
@@ -132,7 +106,7 @@ const Product2 = () => {
                     type="video/mp4"
                     playsInline
                     muted
-                    className="h-[330px] md:h-[500px]  w-full  object-cover "
+                    className="h-[330px] md:h-[500px]  w-full  object-cover rounded-t-xl "
                   />
                   <p className="m-4 capitalize text-sm md:text-lg">
                     @madwaxx_co
