@@ -31,7 +31,7 @@ const HeroSection = ({ isMenuShown }) => {
         type="video/mp4"
         playsInline
         muted
-        className=" object-cover w-[400px] h-[300px] md:h-full md:w-full absolute -z-10 "
+        className=" object-cover w-[500px] h-[300px] md:h-full  md:w-full absolute -z-10 "
       />
 
       <div
