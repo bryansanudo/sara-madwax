@@ -44,7 +44,7 @@ const MobileBanner = () => {
     },
   ];
   return (
-    <div className=" lg:hidden flex items-center justify-center py-8 gap-5">
+    <div className=" lg:hidden flex items-center justify-center py-8 md:gap-5 gap-2">
       {links.map(({ id, link, src, brand }) => (
         <a key={id} href={link}>
           <div>
